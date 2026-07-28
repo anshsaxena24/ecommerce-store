@@ -1,0 +1,22 @@
+.page { padding: 2rem 0 4rem; }
+
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.header .page-title { margin-bottom: 0; }
+.count { font-size: 0.9375rem; color: var(--text-muted); }
+
+.layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.main { flex: 1; min-width: 0; }
+
+@media (max-width: 768px) {
+  .layout { flex-direction: column; }
+}

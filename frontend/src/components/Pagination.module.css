@@ -1,0 +1,23 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  padding: 1.5rem 0;
+}
+.btn {
+  padding: 0.4375rem 0.75rem;
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  background: var(--bg);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.15s;
+  min-width: 36px;
+}
+.btn:hover:not(:disabled) { background: var(--bg-muted); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.active { background: var(--primary); color: white; border-color: var(--primary); }
+.active:hover { background: var(--primary-dark) !important; }
+.ellipsis { padding: 0 0.25rem; color: var(--text-muted); }
